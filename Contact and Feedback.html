@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <a href="index.html"></a>   
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background-color: #c2c4c7;
+background-image: url('feedback.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0c0c;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.top-navbar img {
+    height: 100px; /* Adjust the height as needed */
+    width: 150px;  /* Maintain aspect ratio */
+}
+
+.top-navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-left: -120px;
+}
+
+.top-navbar .search-bar {
+    width: 500px;
+    padding: 7px;
+    
+}
+
+.top-navbar .user-options a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.bottom-navbar {
+    font-style: italic;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25364e;
+    padding: 24px;
+    color: rgb(228, 222, 222);
+    font-weight: bold;
+    
+}
+.bottom-navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/*
+.feedback-text {
+    text-align: left; 
+    font-size: 48px;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+.feedback-text .spaced-text {
+    display: inline-block;
+    margin-left: 50px; 
+}
+
+.feedback-form {
+    margin: 83px;
+    text-align: justify;
+    padding: 88px;
+    align-items: center;
+}
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: calc(100% - 700px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the container horizontally */
+
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 20px; /* Space between text and form */
+}
+
+.feedback-text {
+    text-align: left;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.feedback-text .spaced-text {
+    display: inline-block;
+    margin-left: 50px; /* Adjust the margin-left to control spacing */
+}
+
+.feedback-form {
+    flex: 1;
+    background-color: lavender; /* White background for the form box */
+    padding: 20px;
+    border-radius: 57px; /* Rounded corners for the box */
+    box-shadow: #91999d;
+    margin: 109px auto; 
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: calc(100% - 150px);
+    height: 46px; /* Full width minus padding and border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="top-navbar">
+            <img src="logopic.png" alt="MyStore Logo">
+            <a href="#" class="logo">MyStore</a>
+            <input type="text" placeholder="Search Amazon" class="search-bar">
+            <div class="user-options">
+                <a href="index.html">Home</a>     
+                <a href="AboutUs.html">About Us<i class="fa-sharp fa-light fa-address-card"></i></a>
+                <a href="Contact and Feedback.html">Contact and Feedback<i class="fa-solid fa-comment"></i></a>
+                <a href="Cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <div class="bottom-navbar">
+            <div class="nav-links">
+                <a href="#">All</a>
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <p class="feedback-text">Give us your feedback
+        <br>
+        <span class="spaced-text"></span>through this feedback form</p>  
+        <form class="feedback-form" action="your-server-endpoint" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <button type="submit">Send</button>
+        </form>
+    </main>
